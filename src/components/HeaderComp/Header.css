@@ -1,0 +1,41 @@
+.mobile-menu_button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.open-menu_mobile,
+.menu-close_button {
+	cursor: pointer;
+}
+
+.mobile-menu {
+	height: 100vh;
+	width: 60%;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 20;
+	background-color: rgb(35, 32, 46);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+
+.mobile-menu .menu-close_button {
+	position: absolute;
+	top: 5%;
+	left: 15%;
+}
+
+.mobile-menu .navbar a,
+li {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin: 3rem 0;
+	font-size: 1.2em;
+}
