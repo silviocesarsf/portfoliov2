@@ -18,6 +18,7 @@ export default function ProjectComp({
 	descriptionProject,
 	linkProject,
 	isMobile,
+	linkSite
 }) {
 	return (
 		<Container
@@ -28,9 +29,11 @@ export default function ProjectComp({
 			flex={direction}
 			className="projects-container"
 		>
-			<div data-aos="flip-down" className="project-image">
-				<img src={img} alt="" />
-			</div>
+			<a href={linkSite} target="_blank">
+				<div data-aos="flip-down" className="project-image">
+					<img src={img} alt="" />
+				</div>
+			</a>
 			<div
 				data-aos="fade-left"
 				data-aos-delay="100"

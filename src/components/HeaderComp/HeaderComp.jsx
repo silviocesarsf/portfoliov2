@@ -6,6 +6,7 @@ import MobileMenuClose from "../../assets/icon-close.svg"
 import { ContextProvider } from "../../context/Context";
 import "./Header.css"
 import { motion } from "framer-motion";
+import Curriculo from "../../assets/curriculo_silvio_cesar.pdf"
 
 export default function HeaderComp() {
 
@@ -33,8 +34,8 @@ export default function HeaderComp() {
 							animate={{ opacity: 1, x: 0, originX: 1 }}
 							transition={{
 								type: "ease-in",
-                                delay: 0.2,
-                                duration: 0.2,
+								delay: 0.2,
+								duration: 0.2,
 							}}
 
 							className="mobile-menu">
@@ -52,7 +53,9 @@ export default function HeaderComp() {
 									<a href="#contact">
 										<li>Contato</li>
 									</a>
-									<ButtonStyled>Currículo</ButtonStyled>
+									<a href={Curriculo} target="_blank">
+										<ButtonStyled>Currículo</ButtonStyled>
+									</a>
 								</ul>
 							</div>
 						</motion.div>
@@ -74,7 +77,9 @@ export default function HeaderComp() {
 							<a href="#contact">
 								<li>Contato</li>
 							</a>
-							<ButtonStyled>Currículo</ButtonStyled>
+							<a href={Curriculo} target="_blank">
+								<ButtonStyled>Currículo</ButtonStyled>
+							</a>
 						</ul>
 					</div>
 				</>
